@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lazy Load Demo</title>
+    <style type="text/css">
+    .container {
+        position: absolute;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 300px;
+    }
+    img {
+        position: relative;
+        margin-top: -250px;
+        margin-left: 350px;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>Loading......</h1>
+    <div class="container">
+        <img data-echo="code.png">
+    </div>
+    
+    <script type="text/javascript" src="lazy.load.js"></script>
+    <script type="text/javascript">
+    echo.init({
+        offset: 100,
+        throttle: 2500,
+        unload: false,
+        callback: function(elem, op) {
+            console.log(elem, op);
+        }
+    });
+    </script>
+</body>
+
+</html>
