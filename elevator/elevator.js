@@ -1,3 +1,4 @@
+/* global requestAnimationFrame, cancelAnimationFrame, updataEndPosition, Audio */
 var Elevator = function (options) {
   'use strict'
 
@@ -210,7 +211,7 @@ var Elevator = function (options) {
       endCallback = _options.endCallback
     }
     if (_options.startCallback) {
-      startCallback._options.startCallback
+      startCallback = _options.startCallback
     }
   }
   init(options)

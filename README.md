@@ -1,5 +1,6 @@
 # wheels
 
+[![Travis CI](https://travis-ci.org/ZYSzys/zys-wheels.svg?branch=master)](https://travis-ci.org/ZYSzys/zys-wheels)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![license](https://img.shields.io/github/license/ZYSzys/zys-wheels.svg)](https://github.com/ZYSzys/zys-wheels/blob/master/LICENSE)
 
