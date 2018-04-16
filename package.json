@@ -1,0 +1,25 @@
+{
+  "name": "zys-wheels",
+  "version": "1.0.0",
+  "description": "The utility wheels I made during my JavaScript learning.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZYSzys/zys-wheels.git"
+  },
+  "keywords": [
+    "wheels"
+  ],
+  "author": "ZYSzys",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ZYSzys/zys-wheels/issues"
+  },
+  "homepage": "https://github.com/ZYSzys/zys-wheels#readme",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
