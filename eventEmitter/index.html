@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EventEmitter</title>
+</head>
+<body>
+    <div></div>
+    <script type="text/javascript" src="eventEmitter.js"></script>
+    <script type="text/javascript">
+        var e = new EventEmitter()
+
+        function f1(a, b) {
+            console.log(a, b, a+b)
+        }
+        function f2(a, b) {
+            console.log(a, b, a-b)
+        }
+        function f3(a, b) {
+            console.log(a, b, a*b)
+        }
+
+        e.on('f', f1).once('f', f2).on('f', f3)
+        e.emit('f', [2, 8])
+
+        e.off('f', f3)
+        e.emit('f', [1,3])
+
+        e.allOff()
+        e.emit('f', [1,3])
+    </script>
+</body>
+</html>
