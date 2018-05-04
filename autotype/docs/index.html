@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>AutuType</title>
+    <style type="text/css">
+    html,
+    body {
+        text-align: center;
+    }
+
+    img {
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="content"></div>
+    <script type="text/javascript" src="js/eventEmitter.js"></script>
+    <script type="text/javascript" src="js/autotype.js"></script>
+    <script type="text/javascript">
+    var arr = [
+        { type: 'text', text: '佛祖保佑 永无BUG' },
+        { type: 'br' },
+        { type: 'text', text: '本模块已经经过开光处理，绝无可能再产生bug ', time: 100 },
+        { type: 'text', text: '，嗯？' },
+        { type: 'wait', time: 900 },
+        { type: 'delete', num: 4 },
+        { type: 'text', text: '，嗯!' },
+        { type: 'br' },
+        { type: 'text', text: 'Talk is cheap, show me the code!', time: 100 },
+        { type: 'wait', time: 900 },
+        { type: 'img', src: 'code.png' },
+        { type: 'wait', time: 900 },
+        { type: 'text', text: 'Copyright by ZYSzys' }
+    ]
+    var autoType = new AutoType('#content', arr, {
+        speed: 200
+    })
+    autoType.once("end", function() {
+        console.log('End')
+    })
+    </script>
+</body>
+
+</html>
