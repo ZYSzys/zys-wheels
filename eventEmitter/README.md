@@ -5,7 +5,7 @@
 ## Usage
 
 ```js
-<script type="text/javascript" src="eventEmitter.js"></script>
+<script type="text/javascript" src="eventEmitter.min.js"></script>
 <script type="text/javascript">
     var ee = new EventEmitter()
 </script>
