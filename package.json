@@ -1,6 +1,6 @@
 {
   "name": "zys-wheels",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "The utility wheels I made during my JavaScript learning.",
   "main": "index.js",
   "scripts": {
